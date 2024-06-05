@@ -1,0 +1,207 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  color: azure;
+  background-image: radial-gradient(rgb(33, 3, 3), rgb(27, 25, 25));
+  align-items: start;
+  height: auto;
+  background-size: cover;
+  padding: 10px;
+}
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.filter{
+  background-color: rgb(77, 4, 4);
+  color: white;
+  height: 30px;
+  margin: 20px;
+  border:none;
+  border-radius: 9px;
+  padding: 10px;
+  text-align: center;
+}
+.filter:hover{
+  background-color: rgb(224, 12, 12);
+}
+
+@media screen and (max-width: 988px) {
+  .filters {
+    display: none;
+  }
+  .App{
+    justify-content: center;
+  }
+}
+
+.filters input {
+  margin: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.job {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 2px 2px 12px #aaa;
+}
+
+.job h2 {
+  margin: 0 0 10px 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Styling the search input field */
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Focus state for the search input field */
+.search-input:focus {
+  border-color: #007BFF;
+}
+
+/* Styling the search button */
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover state for the search button */
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.no-jobs-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 64px;
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-view {
+    margin-left: 30px;
+    width: 100%;
+    padding-bottom: 0;
+    margin-top: 0px;
+  }
+}
+
+.no-jobs-img {
+  width: 250px;
+  height: 180px;
+  margin: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-img {
+    width: 459px;
+    height: 315px;
+  }
+}
+
+.no-jobs-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3px;
+  width: 90%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-heading {
+    margin-top: 32px;
+    font-size: 42px;
+  }
+}
+
+.no-jobs-description {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 12px;
+  width: 90%;
+  max-width: 288px;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 768px) {
+  .no-jobs-description {
+    margin-top: 12px;
+    font-size: 14px;
+    width: 60%;
+    max-width: 466px;
+  }
+}
+
+
+.custom-select {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: linear-gradient(45deg, transparent 50%, #007BFF 50%),
+                    linear-gradient(135deg, #007BFF 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 120px;
+}
+
+.custom-select:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.custom-select option {
+  padding: 10px;
+}

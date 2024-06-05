@@ -1,0 +1,117 @@
+###
+
+POST http://localhost:4001/register/
+Content-Type: application/json
+
+{   
+    "name":"charan",
+    "phone":"7225847527",
+    "email": "charan@456",
+    "password": "charan"
+    
+}
+
+
+###
+
+POST http://localhost:4001/login/
+Content-Type: application/json
+
+{
+    "username":"kaira",
+    "password": "kaira"
+}
+
+
+###
+
+POST http://localhost:4001/userDetails/
+Content-Type: application/json
+
+{
+    "username":"kaira",
+    "password": "kaira"
+}
+
+# ###
+# GET https://user-credientials.onrender.com/users/
+
+###
+
+GET http://localhost:4001/user/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FpcmEiLCJpYXQiOjE3MTcxMzIyMzZ9.S0x2EsHZKwr-u7OHcDxhYmsc0ZEPFfp55x6KNStwblo
+
+
+###
+
+GET http://localhost:4001/jobList/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FpcmEiLCJpYXQiOjE3MTcxMzIyMzZ9.S0x2EsHZKwr-u7OHcDxhYmsc0ZEPFfp55x6KNStwblo
+
+
+###
+
+GET http://localhost:4001/jobs/2
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FpcmEiLCJpYXQiOjE3MTcxMzIyMzZ9.S0x2EsHZKwr-u7OHcDxhYmsc0ZEPFfp55x6KNStwblo
+
+# ###
+# POST https://user-credientials.onrender.com/login/
+# Content-Type: application/json
+
+# {
+#     "name":"rahul",
+#     "password": "rahu1l"
+# }
+
+# ###
+# POST https://user-credientials.onrender.com/register/
+# Content-Type: application/json
+
+# {   
+#     "name":"rahu",
+#     "phone":"7225847527",
+#     "email": "rahul@456",
+#     "password": "rahu"
+    
+# }
+
+###
+DELETE http://localhost:4001/user/1/
+
+###
+GET http://localhost:4001/jbss?search=&employment_typeFreelance&amount=0
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FpcmEiLCJpYXQiOjE3MTcxMzIyMzZ9.S0x2EsHZKwr-u7OHcDxhYmsc0ZEPFfp55x6KNStwblo
+
+
+###
+
+POST http://localhost:4001/registrations/
+Content-Type: application/json
+
+{   
+    "id":2,
+    "job_name":"Deveops Developer",
+    "user_name":"charan",
+    "ph_no":"7225847527",
+    "email": "charan@456",
+    "image":"kjkjalk",
+    "employment_type":"Internship",
+    "packages":"9LPA",
+    "location":"Delhi"
+}
+
+###
+GET http://localhost:4001/registration/
+
+###
+DELETE http://localhost:4001/registration/1/
+
+
+###
+
+POST http://localhost:4001/applications/
+Content-Type: application/json
+
+{
+    "user_name":"charan"
+    
+}

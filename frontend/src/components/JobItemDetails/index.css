@@ -1,0 +1,111 @@
+.back {
+    background-image: linear-gradient(rgb(27, 23, 29), rgb(44, 14, 45));
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+    padding: 40px;
+    height: auto;
+    padding: 20px;
+  }
+
+  @media screen and (max-width:200px){
+    .back{
+      min-height: 100vh;
+    }
+  }
+  .heading {
+    margin-bottom: 10px;
+    color: white;
+
+  }
+  .content{
+    border: 1px solid #ddd;
+    background-image: linear-gradient(rgb(9, 7, 10), rgb(44, 14, 45));
+    border-radius: 5px;
+    padding: 20px;
+    /* margin-top: 190px; */
+    max-width: 900px;
+    
+    margin: 50px;
+    box-shadow: 2px 2px 12px #aaa;
+  }
+  .button:hover{
+      background-color: rgb(245, 5, 173);
+      
+  }
+ 
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+/* Style applied when the button is clicked */
+.button:active {
+  transform: translateY(3px); /* Moves the button 3px down */
+}
+
+
+.first-container1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.company-logo1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.second-container1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inner-container1{
+  display: flex;
+  justify-content: space-between;
+}
+.element1{
+  margin-right: 3px;
+}
+.des1{
+  text-align: left;
+}
+.life-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.life{
+  width: 200px;
+  height: 200px;
+}
+.descrip{
+  max-width: 600px;
+  margin-top: 30px;
+}
+.button{
+  margin-top: 30px;
+}
+
+@media  screen and (max-width: 500px) {
+  .life-container{
+    flex-direction: column;
+  }
+  .content{
+    width: 300px;
+  }
+}
+

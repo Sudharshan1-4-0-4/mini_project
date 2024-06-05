@@ -1,0 +1,41 @@
+.job1 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: auto;
+  height: 400px;
+  max-width: 550px;
+  box-shadow: 2px 2px 12px #aaa;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.first-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.company-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.second-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inner-container{
+  display: flex;
+  justify-content: space-between;
+}
+.element{
+  margin-right: 3px;
+}
+.des{
+  text-align: left;
+}

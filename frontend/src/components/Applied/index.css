@@ -1,0 +1,30 @@
+.course-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: azure;
+    background-image: radial-gradient(rgb(33, 3, 3), rgb(17, 16, 16));
+    align-items: center;
+    
+    min-height: 100vh;
+    background-size: cover;
+    padding: 8px;
+    
+}
+.head{
+    font-weight: bold;
+}
+
+.cards{
+    flex-wrap:wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+marquee {
+    font-size: 20px;
+    font-style: italic;
+}
