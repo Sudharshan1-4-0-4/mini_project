@@ -5,6 +5,7 @@ const sqlite3 = require("sqlite3");
 const bcrypt = require("bcrypt");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
+const sendConfirmationEmail = require('./server');
 
 const app = express();
 app.use(express.json());
@@ -260,7 +261,7 @@ app.post("/registrations", async (request, response) => {
         
       )`;
     const dbResponse = await db.run(insertQuery);
-    
+    sendConfirmationEmail(email, user_name, job_name);
     response.send(`registration successful....`);
   
   }
