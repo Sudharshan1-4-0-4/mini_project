@@ -4,10 +4,10 @@ POST http://localhost:4001/register/
 Content-Type: application/json
 
 {   
-    "name":"charan",
-    "phone":"7225847527",
-    "email": "charan@456",
-    "password": "charan"
+    "name":"sudharshan",
+    "phone":"8688360639",
+    "email": "siddumothukuru@gmail.com",
+    "password": "sudharshan"
     
 }
 
@@ -76,6 +76,9 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FpcmEiL
 
 ###
 DELETE http://localhost:4001/user/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2FpcmEiLCJpYXQiOjE3MTcxMzIyMzZ9.S0x2EsHZKwr-u7OHcDxhYmsc0ZEPFfp55x6KNStwblo
+
+
 
 ###
 GET http://localhost:4001/jbss?search=&employment_typeFreelance&amount=0
@@ -90,9 +93,9 @@ Content-Type: application/json
 {   
     "id":2,
     "job_name":"Deveops Developer",
-    "user_name":"charan",
-    "ph_no":"7225847527",
-    "email": "charan@456",
+    "user_name":"sudharshan",
+    "ph_no":"8688360639",
+    "email": "siddumothukuru@gmail.com",
     "image":"kjkjalk",
     "employment_type":"Internship",
     "packages":"9LPA",
@@ -103,7 +106,7 @@ Content-Type: application/json
 GET http://localhost:4001/registration/
 
 ###
-DELETE http://localhost:4001/registration/1/
+DELETE http://localhost:4001/registration/2/
 
 
 ###
