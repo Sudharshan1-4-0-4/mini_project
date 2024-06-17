@@ -118,3 +118,17 @@ Content-Type: application/json
     "user_name":"charan"
     
 }
+
+###
+
+POST http://localhost:4006/addUser/
+Content-Type: application/json
+
+{
+    "id":4,
+    "name":"mahesh"
+    
+}
+###
+GET http://localhost:4006/products
+
